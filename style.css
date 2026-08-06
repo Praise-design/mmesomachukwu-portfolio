@@ -1,3 +1,282 @@
-body {
-    font-family: Arial, sans-serif;
+/* ===============================
+   GLOBAL STYLES
+================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ===============================
+   NAVIGATION
+================================= */
+
+header{
+    background:#0b1f3a;
+    color:white;
+    min-height:100vh;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#ffd166;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:#ffd166;
+}
+
+/* ===============================
+   HERO
+================================= */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px 8%;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:55px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-text h2{
+    color:#ffd166;
+    margin-bottom:20px;
+    font-weight:500;
+}
+
+.hero-text p{
+    margin-bottom:30px;
+    max-width:600px;
+}
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:360px;
+    height:360px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid #ffd166;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+
+.buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    background:#ffd166;
+    color:#0b1f3a;
+    padding:15px 28px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.secondary{
+    background:white;
+}
+
+/* ===============================
+   SECTIONS
+================================= */
+
+section{
+    padding:90px 8%;
+}
+
+section h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:50px;
+    color:#0b1f3a;
+}
+/* ===============================
+   CARDS
+================================= */
+
+.card{
+    background:white;
+    padding:30px;
+    margin-bottom:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.card h3{
+    color:#0b1f3a;
+    margin-bottom:15px;
+}
+
+/* ===============================
+   SKILLS
+================================= */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.skills-grid span{
+    background:#0b1f3a;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.skills-grid span:hover{
+    background:#ffd166;
+    color:#0b1f3a;
+    transform:scale(1.05);
+}
+
+/* ===============================
+   CONTACT
+================================= */
+
+#contact{
+    background:#0b1f3a;
+    color:white;
+    text-align:center;
+}
+
+#contact h2{
+    color:#ffd166;
+}
+
+#contact p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+#contact i{
+    color:#ffd166;
+    margin-right:10px;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+
+footer{
+    background:#061324;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+.hero-image img{
+    width:260px;
+    height:260px;
+}
+
+.navbar{
+    flex-direction:column;
+    gap:20px;
+}
+
+.navbar ul{
+    flex-direction:column;
+    text-align:center;
+    gap:15px;
+}
+
+.buttons{
+    justify-content:center;
+}
+
+section h2{
+    font-size:30px;
+}
+
 }
